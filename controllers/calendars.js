@@ -12,6 +12,7 @@ function index(req, res) {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
     res.render('calendars/index', {
-        calendar: calendar(year), months, year
+        calendar: calendar(year), months, year,
+        title: 'Calendar'
     })
 }
