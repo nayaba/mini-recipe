@@ -13,9 +13,11 @@ function calcTable(year) {
         let startDayInWeek = new Date(year, month, 0).getDay() + 1
 
         let monthLong = new Date(year, month + 1, 0) + 1
-        let beforeCount = 0
 
+        let beforeCount = 0
         let counter = 1
+        let startCount = false
+
 
         for (let x = 0; x < arr[month].length; x++) {
             for (let y = 0; y < arr[month][x].length; y++) {
@@ -41,9 +43,7 @@ function calcTable(year) {
     return arr
 }
 
-module.exports = {
-    calcTable
-}
+module.exports = calcTable
 
 /* 
 

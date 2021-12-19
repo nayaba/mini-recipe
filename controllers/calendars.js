@@ -1,4 +1,5 @@
-const Recipe = require('../models/recipe')
+// import our calcTable function from config file
+const calendar = require('../config/calendar')
 
 module.exports = {
     index
