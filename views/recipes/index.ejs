@@ -2,16 +2,16 @@
 <table id="list">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Release<br>Year</th>
+      <th>Name</th>
+      <th>Ingredients</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <% recipes.forEach(function(r) { %>
       <tr>
-        <td><%= r.title %></td>
-        <td><%= r.releaseYear %></td>
+        <td><%= r.name %></td>
+        <td><%= r.ingredients %></td>
         <td><a href="/recipes/ r._id %>">DETAILS</a></td>
       </tr>
       <% }); %>
