@@ -1,9 +1,8 @@
 <%- include('../partials/header') %>
+
 <div class="calendar-container">
-    <% for(let month = 0; month < calendar.length; month++) { %>
 
-        <div class="month-container" id="<%= title %>">
-
+    <div class="month-container" id="<%= title %>">
 
         <div class="day-of-week">
             <span>Sun</span><span>Mon</span><span>Tue</span><span>
@@ -23,8 +22,7 @@
         </div>
         <% } %>
     </div>
-
-    <% } %>
+    
 </div>
 
 <%- include('../partials/footer') %>

@@ -19,7 +19,7 @@ function calcTable(year) {
         let startDayInWeek = new Date(year, month, 0).getDay() + 1
 
         // if you run without + 1 you get an object returned?
-        let monthLong = new Date(year, month + 1, 0) + 1
+        let monthLong = new Date(year, month + 1, 0).getDate() + 1
 
         let beforeCount = 0
         let counter = 1
