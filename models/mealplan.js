@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const mealplanSchema = new Schema({
+const mealPlanSchema = new Schema({
     date: {
         type: String,
         required: true
@@ -15,4 +15,4 @@ const mealplanSchema = new Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model('Mealplan', mealplanSchema)
+module.exports = mongoose.model('MealPlan', mealPlanSchema)
