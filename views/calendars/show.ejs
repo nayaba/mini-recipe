@@ -16,13 +16,11 @@
             <option value="Dessert">Dessert</option>
             <option value="Snack">Snack</option>
           </select>
-        <label>Recipe:</label>
-        <select name="recipe">
-            <option value="Breakfast">Breakfast</option>
-            <option value="Lunch">Lunch</option>
-            <option value="Dinner">Dinner</option>
-            <option value="Dessert">Dessert</option>
-            <option value="Snack">Snack</option>
+          <label>Recipe:</label>
+          <select name="recipe">
+          <% recipes.forEach(function(r) { %>
+            <option value="<% r.name %>"><%= r.name %></option>
+            <% }); %>
           </select>
         <label>Date:</label>
         <input type="date" name="date" id="modal-date-input">
