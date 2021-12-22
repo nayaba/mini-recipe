@@ -15,19 +15,27 @@ Date.prototype.toDateInputValue = (function() {
     return local.toJSON().slice(0,10);
 })
 
+
 // add event listener to each date
 dateEl.forEach(function (date) {
-  // When the user clicks on the date, open the modal
-  date.addEventListener('click', function (e) {
-    let clickedDate = e.target.innerText
-    console.log(clickedDate)
+    // When the user clicks on the date, open the modal
+    date.addEventListener('click', function (e) {
+        
+        modal.style.display = 'block'
+        
+        // set default date in modal form to today
+        // modalDateEl.value = new Date().toDateInputValue()
+        
+        // Get clicked on date
+        let clickedDate = e.target.id
+        // Turn into date string
+        const clicked = new Date(clickedDate).toJSON().slice(0, 10)
+        console.log(clicked)
 
-    modal.style.display = 'block'
+        // let clickedDateString = `${clickedDate}`
 
-    // set default date in modal form to today
-    // modalDateEl.value = new Date().toDateInputValue()
-
-    modalDateEl.value = new Date().toDateInputValue()
+        // Set clicked on date
+        modalDateEl.value = clicked
   })
 })
 

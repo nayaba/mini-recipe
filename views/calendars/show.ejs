@@ -25,7 +25,7 @@
             <option value="Snack">Snack</option>
           </select>
         <label>Date:</label>
-        <input type="date" name="date" value="2018-07-22" id="modal-date-input">
+        <input type="date" name="date" id="modal-date-input">
         <input type="submit" value="Add Meal to Plan">
       </form>
   </div>
@@ -45,7 +45,7 @@
             <% for(let day = 0;day < calendar[month][week].length;day++) { %>
 
             <div class="date">
-                <div id="<%=calendar[month][week][day] %>">
+                <div id="<%= `${year}-${month+1}-${calendar[month][week][day]}` %>">
                     <%= calendar[month][week][day] %>
                 </div>
             </div>
