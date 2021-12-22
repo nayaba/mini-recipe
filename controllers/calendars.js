@@ -1,6 +1,7 @@
 // import our calcTable function from config file
 const calendar = require('../config/calendar')
 const MealPlan = require('../models/mealplan')
+// const scriptFile = require('../public/javascripts/calendar')
 
 module.exports = {
     index,
