@@ -19,8 +19,9 @@
           <label>Recipe:</label>
           <select name="recipe">
           <% recipes.forEach(function(r) { %>
-            <option value="<% r.name %>"><%= r.name %></option>
-            <% }); %>
+            <option value="<%= r._id %>"> <%= r.name %> </option>
+
+            <% console.log('id:  ', r._id) }); %>
           </select>
         <label>Date:</label>
         <input type="date" name="date" id="modal-date-input">

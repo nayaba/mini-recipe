@@ -3,8 +3,8 @@ const Schema = mongoose.Schema
 
 const mealPlanSchema = new Schema({
     date: {
-        type: String,
-        required: true
+        type: Date,
+        // required: true
     },
     meal: {
         type: String,
