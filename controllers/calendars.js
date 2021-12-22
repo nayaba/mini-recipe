@@ -10,6 +10,7 @@ module.exports = {
 }
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+let today = new Date()
 
 // callback function
 function index(req, res) {
@@ -25,9 +26,9 @@ function index(req, res) {
 
 // show function
 async function show(req, res) {
-    const year = req.query.year || 2022
+    const year = today.getFullYear() || 2022
     // will update to take info from req
-    const month = 3
+    const month = today.getMonth()
     const showMonth = months[month]
 
     let recipes = await Recipe.find({})
