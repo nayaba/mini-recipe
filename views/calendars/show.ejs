@@ -7,7 +7,27 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <form id="mealplan-form" action="/mealplan" method="POST">
+        <label>Meal:</label>
+        <select name="meal">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Snack">Snack</option>
+          </select>
+        <label>Recipe:</label>
+        <select name="recipe">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Snack">Snack</option>
+          </select>
+        <label>Date:</label>
+        <input type="date" name="date" value="2018-07-22">
+        <input type="submit" value="Add Meal to Plan">
+      </form>
   </div>
 
 </div>
